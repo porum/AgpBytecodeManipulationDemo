@@ -1,10 +1,9 @@
-import org.aspectj.lang.annotation.Aspect
-
 plugins {
   id("com.android.application")
   id("org.jetbrains.kotlin.android")
 }
 
+apply<TransformDemoPlugin>()
 apply<AsmTransformPlugin>()
 apply<JavassistDemoPlugin>()
 apply<AspectJDemoPlugin>()
@@ -43,8 +42,4 @@ dependencies {
   implementation("androidx.core:core-ktx:1.7.0")
   implementation("androidx.appcompat:appcompat:1.4.1")
   implementation("com.google.android.material:material:1.5.0")
-}
-
-androidComponents {
-
 }
