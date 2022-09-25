@@ -1,3 +1,5 @@
+import org.aspectj.lang.annotation.Aspect
+
 plugins {
   id("com.android.application")
   id("org.jetbrains.kotlin.android")
@@ -5,6 +7,7 @@ plugins {
 
 apply<AsmTransformPlugin>()
 apply<JavassistDemoPlugin>()
+apply<AspectJDemoPlugin>()
 
 android {
   namespace = "com.panda912.agpbytecodemanipulationdemo"

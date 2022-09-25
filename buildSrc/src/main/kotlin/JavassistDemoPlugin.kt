@@ -1,4 +1,4 @@
-import com.android.build.api.variant.*
+import com.android.build.api.variant.AndroidComponentsExtension
 import com.android.build.api.artifact.MultipleArtifact
 import com.android.build.gradle.BaseExtension
 import javassist.ClassPool
